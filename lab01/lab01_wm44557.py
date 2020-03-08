@@ -1,6 +1,23 @@
 from matplotlib import pyplot as plt
-def wartosc(xd):
-    return 7.0 * pow(xd,2.0) + 5.0*xd + 7.0
+import math
+def check(xd):
+
+    wFunkcji= 7 * xd**2 + 5*xd + 7
+    bKwadrat = (5*xd)**2
+    czteryAc = 4 * 7
+    delta = bKwadrat-czteryAc
+    iks1 = (-(5*xd) - math.sqrt(delta))/(2*7)
+    iks2 = (-(5*xd) + math.sqrt(delta))/(2*7)
+    if(delta < 0):
+        return print("Brak miejsc zerowych")
+    print("Wartosc funkcji: ", wFunkcji, "Delta: ", delta, "X.1: ", iks1, "X.2: ",iks2)
+
+    
+check(2)
+
+
+def wartosc(x):
+    return 7.0 * pow(x,2.0) + 5.0*x + 7.0
 def funkcja():
     tZero = -10; tN = 10; deltaT =(1.0/100); tn = tZero; n = 0
     tab = []; tab2 = []
@@ -13,5 +30,5 @@ def funkcja():
         n=n+1
         
 
-funkcja()
+#funkcja()
 plt.show()
