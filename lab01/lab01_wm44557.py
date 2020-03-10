@@ -57,19 +57,19 @@ def v(tn):
 def p_2(tn):
     wynik = 0
     for n in range(1,3):   
-        wynik = wynik + ( ( ( math.cos(12 * tn) * n**2 ) + ( math.cos( 16 * tn * n ) ) ) / n**2 )
+        wynik = wynik + ( ( ( math.cos((12 * tn) * n**2 )) + ( math.cos( 16 * tn * n ) ) ) / n**2 )
     return wynik
        
 def p_4(tn):
     wynik = 0
     for n in range(1,5):   
-        wynik = wynik + ( ( ( math.cos(12 * tn) * n**2 ) + ( math.cos( 16 * tn * n ) ) ) / n**2 )
+        wynik = wynik + ( ( ( math.cos((12 * tn) * n**2 )) + ( math.cos( 16 * tn * n ) ) ) / n**2 )
     return wynik
        
 def p_AB(tn): ## A= 7* B = 5 = 35 +1 = 36
     wynik = 0
     for n in range(1,36):   
-        wynik = wynik + ( ( ( math.cos(12 * tn) * n**2 ) + ( math.cos( 16 * tn * n ) ) ) / n**2 )
+        wynik = wynik + ( ( ( math.cos((12 * tn) * n**2 )) + ( math.cos( 16 * tn * n ) ) ) / n**2 )
     return wynik
        
 
