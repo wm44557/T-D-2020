@@ -26,6 +26,8 @@ import math
 #         tab.append(tn)
 #         tab2.append(wartosc(tn))
 #         plt.plot(tab,tab2)
+ #        plt.ylabel('f(t)')
+#         plt.xlabel('t(s)')
 #         tn=tZero + (n*deltaT)
 #         n=n+1
         
@@ -112,6 +114,10 @@ def funkcja2(opcja):
 
     plt.figure()
     plt.plot(tab,tab2)
+    plt.ylabel('f(t)')
+    plt.xlabel('t(s)')
+    plt.savefig('./lab01/wykres {} .png'.format(opcja))
+
    
 
         

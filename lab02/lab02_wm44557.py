@@ -28,8 +28,6 @@ def funkcja1():
     plt.savefig('./lab02/wykres1.png')
     
 
-
-
 def sT2(t):
     return round(((((A * math.sin(( 2*math.pi * 5 * t) +fi )) + 1) / 2*A) * 2**16),0)
 
