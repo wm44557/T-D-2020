@@ -76,7 +76,6 @@ def p_AB(tn): ## A= 7* B = 5 = 35 +1 = 36
        
 
 
-
 def wartosc2(tn,opcja):
     if(opcja == 1):
         wynik = y(tn)

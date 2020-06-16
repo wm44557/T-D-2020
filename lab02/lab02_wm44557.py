@@ -8,6 +8,7 @@ fs = 100
 def sT(t):
     return A * math.sin(( 2*math.pi * 5 * t) +fi )
 
+
 def funkcja1():
     tZero = 0; tN = 7; deltaT =(1.0/1000); tn = tZero; n = 0
     tab = []; tab2 = []
@@ -21,19 +22,19 @@ def funkcja1():
         tn=tZero + (n * deltaT)
         n = n + 1
 
-    plt.figure()
-    plt.plot(tab,tab2,'.')
+    plt.plot(tab,tab2)
     plt.xlabel('T')
     plt.ylabel('A')
     plt.savefig('./lab02/wykres1.png')
     
 
 def sT2(t):
-    return round(((((A * math.sin(( 2*math.pi * 5 * t) +fi )) + 1) / 2*A) * 2**16),0)
+    return round(((((A * math.sin(( 2*math.pi * 5 * t) +fi ))+1 ) / 2*A) * 2**16),0)
 
 
 def funkcja2():
-    tZero = 0; tN = 7; deltaT =(1.0/1000); tn = tZero; n = 0
+    fs =500 #hz
+    tZero = 0; tN = 7; deltaT =(1/fs); tn = tZero; n = 0
     tab = []; tab2 = []
     while(tn <= tN):
         print(tn," ",sT2(tn)," \n")
@@ -55,7 +56,7 @@ def sT3(t):
     return round(((((A * math.sin(( 2*math.pi * 5 * t) +fi )) + 1) / 2*A) * 2**8),0)
 
 def funkcja3():
-    tZero = 0; tN = 7; deltaT =(1.0/500); tn = tZero; n = 0
+    tZero = 0; tN = 7; deltaT =(1.0/250); tn = tZero; n = 0
     tab = []; tab2 = []
     while(tn <= tN):
         print(tn," ",sT3(tn)," \n")
